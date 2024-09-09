@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Filter Section -->
+    <div id="filter-section">
+        <label for="location-filter">Location:</label>
+        <select id="location-filter">
+            <option value="">All</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+        </select>
+
+        <label for="price-filter">Price Range:</label>
+        <select id="price-filter">
+            <option value="">All</option>
+            <option value="0-1000">0-1000</option>
+            <option value="1000-2000">1000-2000</option>
+            <option value="2000-3000">2000-3000</option>
+        </select>
+
+        <label for="bedroom-filter">Bedrooms:</label>
+        <select id="bedroom-filter">
+            <option value="">All</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <!-- Property Listings Section -->
+    <div id="property-listings"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
